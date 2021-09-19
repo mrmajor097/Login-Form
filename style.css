@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+body {
+  background: rgba(0, 0, 0, 0.486) url(back.jpg) center fixed no-repeat;
+  background-blend-mode: darken;
+}
+.container {
+  background: rgba(0, 0, 0, 0.445);
+  width: 40%;
+  padding: 40px;
+  right: 30%;
+  top: 10%;
+  color: white;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.inputdiv,
+.btninputdiv {
+    width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.inputdiv input {
+  width: 100%;
+  height: 30px;
+  margin: 10px 0;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.473);
+  color: white;
+}
+.btninputdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btninputdiv input {
+  width: 110px;
+  height: 45px;
+  border-radius: 40px;
+  font-size: 20px;
+
+  background-color: rgba(0, 0, 0, 0.849);
+  color: white;
+}
+
+.inputdiv label {
+  font-size: 20px;
+  margin: 0 10px;
+}
+input::placeholder {
+  color: rgb(221, 221, 221);
+}
+
+@media only screen and (max-width:700px) {
+    .container{
+        width: 90%;
+        right: 5%;
+    }
+}
